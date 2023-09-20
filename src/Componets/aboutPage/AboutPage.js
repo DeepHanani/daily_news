@@ -1,12 +1,16 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import './About.css'
 import { useDispatch, useSelector } from 'react-redux';
 import axios from 'axios';
 import { sportData } from '../action/ProductAction';
 import Header from '../Header/Header';
 import Background from '../Background/Background';
+import { useCollapse } from 'react-collapsed'
 
 export default function AboutPage() {
+
+  const [isExpanded, setExpanded] = useState(false)
+  const { getCollapseProps, getToggleProps } = useCollapse({ isExpanded })
 
   const sportitem = useSelector(y=>y.product);
   console.log(sportitem,"raj")
@@ -42,7 +46,13 @@ export default function AboutPage() {
                   <img src={value.urlToImage} alt="" />
                   <div className="part-1">
                     <div className="desc">
-                      <p className="name">{value.title}</p>
+                      <p className="name">{value.title.slice(0,20)}<span {...getCollapseProps()}>{value.title.slice(20,60)}</span>  <a
+                      {...getToggleProps({
+                        onClick: () => setExpanded((prevExpanded) => !prevExpanded),
+                      })}
+                    >
+                      {isExpanded ? 'readless' : 'readmore....'}
+                    </a></p>
                     </div>
   
                   </div>

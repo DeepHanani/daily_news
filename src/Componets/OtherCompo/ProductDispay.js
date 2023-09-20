@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useDispatch,useSelector } from 'react-redux'
 import {  getData } from '../action/ProductAction';
 import axios from 'axios'
@@ -7,9 +7,13 @@ import Header from '../Header/Header';
 import Background from '../Background/Background';
 import Footer from '../../Footer/Footer';
 import Technology from '../../Footer/Technology/Technology';
+import { useCollapse } from 'react-collapsed'
 
+export default function ProductDispay(){  
 
-export default function ProductDispay(){
+  const [isExpanded, setExpanded] = useState(false)
+  const { getCollapseProps, getToggleProps } = useCollapse({ isExpanded })
+
 
     const prodData = useSelector(y=>y.product);
     
@@ -52,7 +56,13 @@ export default function ProductDispay(){
              
                 <div className="part-1">
                   <div className="desc">
-                    <p className="name">{value.title.slice(0,60)}</p>
+                    <p className="name">{value.title.slice(0,40)}<span {...getCollapseProps()}>{value.title.slice(40,60)}</span>  <a
+                    {...getToggleProps({
+                      onClick: () => setExpanded((prevExpanded) => !prevExpanded),
+                    })}
+                  >
+                    {isExpanded ? 'readless' : 'readmore....'}
+                  </a></p>
                   </div>
 
                 </div>

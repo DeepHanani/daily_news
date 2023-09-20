@@ -5,9 +5,14 @@ import { movies } from '../action/ProductAction';
 import Background from '../Background/Background';
 import Header from '../Header/Header';
 import './MoviePage.css';
+import Readmore from './Readmore';
+import { useState } from 'react';
+import { useCollapse } from 'react-collapsed'
 
 export default function MoviePage() {
-   
+  const [isExpanded, setExpanded] = useState(false)
+  const { getCollapseProps, getToggleProps } = useCollapse({ isExpanded })
+  
     const movieNews = useSelector(y=>y.product.movies);
     console.log(movieNews,"ffffff")
 
@@ -42,7 +47,16 @@ export default function MoviePage() {
                   <img src={value.urlToImage} alt="" />
                   <div className="part-1">
                     <div className="desc">
-                      <p className="name">{value.title}</p>
+                    
+                      <p className="name">{value.title.slice(0,20)}<span {...getCollapseProps()}>{value.title.slice(20,60)}</span>  <a
+                      {...getToggleProps({
+                        onClick: () => setExpanded((prevExpanded) => !prevExpanded),
+                      })}
+                    >
+                      {isExpanded ? 'readless' : 'readmore....'}
+                    </a>
+                   </p>
+                      
                     </div>
   
                   </div>
