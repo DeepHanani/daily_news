@@ -1,0 +1,134 @@
+*{
+    margin: 0px;
+    padding: 0px;
+   }
+   
+   .post-1 img{
+    width: 300px;
+    height: 200px;
+    /* border-radius: 8px;  */
+   margin-bottom: 10px;
+    border-bottom:4px solid rgb(163, 84, 4);
+  } 
+
+  /* .post-1:hover{
+    transition: transform 1s;
+    transform: scale(1.1);
+  } */
+  
+  .post-1{
+    width: 300px;
+    background-color:rgb(255, 255, 255);
+    /* text-align: center; */
+    /* padding: 10px;  */
+   margin: 10px;
+    border-radius:10px;
+    height: 290px;
+    box-shadow: 2px 2px 15px rgb(52, 50, 50);
+    overflow: hidden;
+  
+    
+  }
+
+  .post-1:hover{
+    background-color: rgb(24, 24, 27);
+    color: white;
+  }
+  
+ 
+  
+  .part-2{
+    display: flex;
+    /* align-content: space-between; */
+    flex-direction: column;
+    margin-top: 7px;
+    margin-bottom: 6px;
+  }
+
+  
+  
+  .desc p{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-weight: bold;
+    /* text-align: start; */
+    /* font-size: 18px; */
+    /* color: white; */
+  }
+  
+
+  
+  .pricies p{
+    /* font-family:Arial, Helvetica, sans-serif; */
+    font-weight: 500;
+    font-size: 16px;
+    color:gray;
+    padding: 5px;
+
+  }
+
+  .pricies{
+    text-align: start;
+  }
+
+  .protect{
+    text-align: center;
+   
+    
+  }
+
+  .protect h1{
+    color: rgb(44, 41, 110);
+    text-decoration: underline;
+    font-weight: 1000;
+  }
+
+  .protect h1:hover{
+    text-decoration: underline;
+
+  }
+  
+  .main{
+    display: flex;
+    /* flex-flow: wrap; */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  padding-top: 60px;
+    width: 1900px;
+    margin: 0px auto 0px auto;
+    background-color: rgb(237, 233, 233);
+    /* background-color: rgb(215, 215, 14); */
+    padding-bottom: 150px;
+  
+   
+    
+  }
+
+
+
+  .title{
+    margin-top: 50px;
+  }
+
+  .last {
+text-align: start;
+  }
+
+  .videoTag{
+    padding-bottom: 150px;
+   
+  }
+
+  .videoTag iframe{
+    border-bottom: 5px solid red;
+    border-top: 5px solid red;
+  }
+
+  .videoTag h1{
+    margin-left: 10px;
+    color: rgb(232, 17, 17);
+  }
+  
+   
+ 

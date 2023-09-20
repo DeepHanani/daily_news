@@ -1,0 +1,43 @@
+.mainServicesdiv{
+    display: flex;
+    width: 1400px;
+    justify-content: space-between;
+    /* background-color: aquamarine; */
+    margin: 110px auto 0px auto;
+    
+}
+
+.child{
+    width: 400px;
+    /* background-color: aqua; */
+    text-align: center;
+    padding: 10px;
+}
+
+.imgDiv{
+    width: 400px;
+}
+
+.child h3{
+    padding: 5px;
+}
+
+.imgDiv img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.feature{
+    text-align: center;
+    padding: 70px;
+}
+
+.feature h1{
+    color: brown;
+    text-decoration: underline;
+}
+
+
+.child:hover{
+    background-color: rgb(245, 243, 243);
+}
+

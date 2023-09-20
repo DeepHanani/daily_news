@@ -1,0 +1,98 @@
+
+.photo {
+    height: 500px;
+    background-color: chocolate;
+    background: url("https://coolwallpapers.me/picsup/3078295-advertisement_advertising_background_billboard_black_blackboard_blank_board_chalk_chalkboard_childhood_class_classroom_close_college_communication_copy_dirty_drawing_education_empty_erase_exam_fr.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+/* margin-left: 620px; */
+/* margin-top: 20px; */
+/* border: 5px solid black; */
+/* width: 700px; */
+/* border-radius: 50%; */
+/* height: 400px; */
+/* box-shadow: 10px 5px 10px rgb(25, 25, 32); */
+ 
+
+
+
+  }
+
+  .mainLogo img{
+      border-radius: 50%;
+  }
+
+  /* .mainLogo:hover{
+    transition: transform 4s;
+    transform: scale(1.2);
+  } */
+  .bag{
+    display: flex;
+    justify-content: center;
+   /* background-color: blueviolet; */
+   width: 1000px;
+   margin: auto;
+   justify-content: space-between;
+   padding-top: 80px;
+  
+  }
+
+  .bag:hover{
+    transition: transform 4s;
+    transform: scale(1.2);
+  }
+  
+  .icon{
+    font-size: 300px;
+  }
+  
+  
+  .detail {
+    width: 660px;
+  
+    /* padding: 100px 0px 0px 600px; */
+  }
+  
+  .big {
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+
+  }
+
+  /* .big:hover{
+    color: inherit;
+    text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+    transition: text-decoration-color 5000ms;
+  } */
+  .small {
+    margin-bottom: 35px;
+    line-height: 25px;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+   
+  }
+  
+  .detail button {
+    padding: 17px 60px;
+    border-radius: 50px;
+    font-size: 18px;
+    background-color: orangered;
+    color: white;
+    border: none;
+  }
+
+  /* .detail:hover{
+    transition: transform 4s;
+    transform: scale(1.2);
+  } */
+
+  /* .big span{
+    color: rgb(248, 17, 17);
+    text-decoration: underline;
+  } */

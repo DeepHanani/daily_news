@@ -1,0 +1,33 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "name": "Deep Hanani",
+      "email": "abc@gmail.com",
+      "phone": "9632587412",
+      "password": "123456",
+      "id": 2
+    },
+    {
+      "name": "Deep Hanani",
+      "email": "abc@gmail.com",
+      "phone": "89562314",
+      "password": "1234",
+      "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
