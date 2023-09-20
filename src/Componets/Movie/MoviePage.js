@@ -5,7 +5,6 @@ import { movies } from '../action/ProductAction';
 import Background from '../Background/Background';
 import Header from '../Header/Header';
 import './MoviePage.css';
-import Readmore from './Readmore';
 import { useState } from 'react';
 import { useCollapse } from 'react-collapsed'
 
